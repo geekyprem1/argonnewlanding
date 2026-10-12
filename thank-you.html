@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#0b0f19">
+<meta name="theme-color" content="#050a15">
 <meta name="description" content="Welcome to ArgonMax. Find your login details and customer support here.">
-<title>Thank you & Account Access — ArgonMax</title>
+<title>Thank You — Your ArgonMax Access Is Ready</title>
 <link rel="icon" href="assets/favicon.png" type="image/png">
 <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
@@ -17,46 +17,238 @@
 </head>
 <body class="thanks-page">
 <a class="skip" href="#main">Skip to content</a>
-<header class="access-header"><div class="access-wrap access-header-inner">
-<a href="index.html" class="access-brand" aria-label="ArgonMax home"><img src="assets/argonmax-logo.webp" alt="ArgonMax AI" width="248" height="52"></a>
-<a href="#access-help" class="access-button access-button--small" data-help-center><span aria-hidden="true">💬</span> Help Center</a>
-</div></header>
-<main id="main" class="access-wrap access-main">
-<div class="access-top-grid">
-<section class="access-welcome" aria-labelledby="welcome-title">
-<p class="access-badge"><span aria-hidden="true">⚡</span> Welcome to ArgonMax</p>
-<h1 id="welcome-title">Welcome To<br><span>ArgonMax</span></h1>
-<p class="access-intro">Thank you for your purchase! Use the login details here to open your workspace and start creating with Gemini 4 Aragon.</p>
-<div class="access-callout"><span aria-hidden="true">🚀</span><p>Write content, generate code, create images and bring your ideas to life—all from one AI workspace.</p></div>
-</section>
-<section class="access-card credentials" aria-labelledby="credentials-title">
-<div class="credentials-header"><div><p class="access-eyebrow">Thank you for choosing ArgonMax</p><h2 id="credentials-title">Your Login Credentials</h2></div><button class="access-button access-button--small" type="button" data-copy-all hidden><span aria-hidden="true">📋</span> Copy All</button></div>
-<dl class="credentials-list">
-<div class="credential-row"><dt><span class="credential-icon" aria-hidden="true">🌐</span> Login URL</dt><dd><a href="https://argon-login.thenextgenai.online/" target="_blank" rel="noopener noreferrer" id="login-url" data-access>https://argon-login.thenextgenai.online/</a></dd></div>
-<div class="credential-row"><dt><span class="credential-icon" aria-hidden="true">✉️</span> Email</dt><dd><span class="credential-value" id="login-email">Your Purchase Email Address</span></dd></div>
-<div class="credential-row"><dt><span class="credential-icon" aria-hidden="true">🔒</span> Password</dt><dd class="credential-password"><code class="credential-value" id="login-password">Argonwala@248656</code><button class="credential-copy" type="button" data-copy-password hidden aria-label="Copy password">📋 Copy</button></dd></div>
-</dl>
-<a href="https://argon-login.thenextgenai.online/" target="_blank" rel="noopener noreferrer" class="access-button access-login" data-access>Log in to ArgonMax <span aria-hidden="true">↗</span></a>
-<p class="credentials-note">Use the email address you entered at checkout and the password shown above.</p>
-<div class="copy-fallback" data-copy-fallback hidden><label for="copy-details">Select and copy your login details:</label><textarea id="copy-details" readonly rows="5" spellcheck="false"></textarea></div>
-</section>
-</div>
-<div class="access-bottom-grid">
-<section class="access-card" id="access-help" aria-labelledby="support-title" tabindex="-1">
-<div class="access-card-heading"><span class="access-card-icon" aria-hidden="true">🎧</span><h2 id="support-title">Need Help?</h2></div>
-<p class="access-card-description">Get help with your account, login or ArgonMax workspace.</p>
-<div class="access-policy"><span aria-hidden="true">ℹ️</span><div><strong>We're here to help you get started.</strong><p>If you have trouble signing in, check that you're using your purchase email and copy the password exactly as shown.</p><p>When contacting support, include your order ID and purchase email so the team can find your purchase.</p></div></div>
-<div class="access-actions"><a href="#support-instructions" class="access-button" data-help-center><span aria-hidden="true">💬</span> Open Help Center</a><a class="access-button access-button--secondary" data-ty-support hidden><span aria-hidden="true">✉️</span> Email Support</a></div>
-<p class="support-receipt" id="support-instructions">You can also find support contact details in your purchase receipt.</p>
-</section>
-<section class="access-card" aria-labelledby="toolkit-title">
-<div class="access-card-heading"><span class="access-card-icon" aria-hidden="true">✦</span><h2 id="toolkit-title">Your Ideas Start Here</h2></div>
-<p class="access-card-description">Meet your ArgonMax toolkit, powered by Gemini 4 Aragon. Choose a tool and turn your first idea into something you can use.</p>
-<ul class="access-features"><li><span aria-hidden="true">⚡</span><div>AI Chat & Content Writing<small>Brainstorm, research and write with AI.</small></div></li><li><span aria-hidden="true">💻</span><div>Code Generation<small>Build and refine your next project.</small></div></li><li><span aria-hidden="true">🎨</span><div>Creative Studio<small>Create images and videos in one place.</small></div></li></ul>
-</section>
-</div>
+
+<header class="ty-header">
+  <div class="ty-wrap ty-header__inner">
+    <a href="index.html" class="ty-brand" aria-label="ArgonMax home">
+      <img src="assets/argonmax-logo.webp" alt="ArgonMax AI" width="248" height="52">
+    </a>
+    <div class="ty-header__side">
+      <span class="ty-header__tag"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Purchase complete</span>
+      <a href="#access-help" class="ty-btn ty-btn--ghost ty-btn--sm" data-help-center>
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.4-.7L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg>
+        Help Center
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO ------------------------------------------------------------- -->
+  <section class="ty-hero" aria-labelledby="welcome-title">
+    <div class="ty-hero__art" aria-hidden="true"></div>
+    <div class="ty-hero__veil" aria-hidden="true"></div>
+    <div class="ty-hero__sparkles" aria-hidden="true">
+      <span style="--x:8%;--y:26%;--s:7px;--d:0s"></span>
+      <span style="--x:16%;--y:64%;--s:5px;--d:.9s"></span>
+      <span style="--x:28%;--y:18%;--s:4px;--d:1.7s"></span>
+      <span style="--x:72%;--y:22%;--s:6px;--d:.5s"></span>
+      <span style="--x:84%;--y:56%;--s:5px;--d:1.3s"></span>
+      <span style="--x:92%;--y:30%;--s:4px;--d:2.1s"></span>
+      <span style="--x:62%;--y:78%;--s:6px;--d:1.1s"></span>
+      <span style="--x:40%;--y:86%;--s:4px;--d:2.4s"></span>
+    </div>
+
+    <div class="ty-wrap ty-hero__inner">
+      <p class="ty-badge">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3Z"/></svg>
+        Payment successful &middot; Welcome to ArgonMax
+      </p>
+      <h1 class="ty-hero__title" id="welcome-title">Thank you, your seat is<br><span class="ty-grad">officially unlocked.</span></h1>
+      <p class="ty-hero__lead">Your ArgonMax workspace is ready and waiting. Everything you need is on this page &mdash; save your login details, sign in, and start creating with Gemini 4 Aragon.</p>
+      <div class="ty-hero__actions">
+        <a class="ty-btn ty-btn--primary ty-btn--lg" href="https://argon-login.thenextgenai.online/" target="_blank" rel="noopener noreferrer" data-access>
+          Log in to ArgonMax
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+        <a class="ty-btn ty-btn--ghost ty-btn--lg" href="#login-details">
+          See your login details
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <ul class="ty-hero__chips">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 14h5l-1 8 8-12h-5l1-8Z"/></svg> Instant access</li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="2.5" y="13" width="4" height="6" rx="1.6"/><rect x="17.5" y="13" width="4" height="6" rx="1.6"/><path d="M20 19a4 4 0 0 1-4 3h-2"/></svg> Support included</li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 7.6-8 9-4.8-1.4-8-4.5-8-9V6l8-3Z"/><path d="m9 12 2 2 4-4"/></svg> Commercial license</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LOGIN DETAILS ---------------------------------------------------- -->
+  <section class="ty-sec" id="login-details" aria-labelledby="credentials-title">
+    <div class="ty-wrap">
+      <header class="ty-sechead ty-sechead--center ty-reveal">
+        <p class="ty-eyebrow">Step 1 &middot; Save these</p>
+        <h2 class="ty-h2" id="credentials-title">Your login details</h2>
+        <p class="ty-secsub">Two minutes from now you will be inside. Copy each detail or hit &ldquo;Copy All&rdquo; and keep it somewhere safe.</p>
+      </header>
+
+      <div class="ty-access">
+        <article class="ty-card ty-card--creds ty-reveal">
+          <div class="ty-creds__head">
+            <div class="ty-creds__title">
+              <span class="ty-chip ty-chip--blue" aria-hidden="true">
+                <svg class="ico" viewBox="0 0 24 24"><path d="M15 7a4 4 0 1 1-3.2 6.4L9 16H7v2H4v-3l5.6-5.6A4 4 0 0 1 15 7Z"/><circle cx="16" cy="9" r="1.2"/></svg>
+              </span>
+              <div>
+                <p class="ty-eyebrow">Thank you for choosing ArgonMax</p>
+                <h3 class="ty-h3">Account access</h3>
+              </div>
+            </div>
+            <button class="ty-btn ty-btn--soft ty-btn--sm" type="button" data-copy-all hidden>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
+              Copy all
+            </button>
+          </div>
+
+          <dl class="ty-creds">
+            <div class="ty-cred">
+              <dt>
+                <span class="ty-chip ty-chip--cyan" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 5.6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-5.6-4-9s1.5-6.4 4-9Z"/></svg></span>
+                Login URL
+              </dt>
+              <dd><a id="login-url" href="https://argon-login.thenextgenai.online/" target="_blank" rel="noopener noreferrer" data-access>https://argon-login.thenextgenai.online/</a></dd>
+            </div>
+            <div class="ty-cred">
+              <dt>
+                <span class="ty-chip ty-chip--violet" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></span>
+                Email
+              </dt>
+              <dd><span class="ty-value" id="login-email">Your Purchase Email Address</span></dd>
+            </div>
+            <div class="ty-cred">
+              <dt>
+                <span class="ty-chip ty-chip--amber" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+                Password
+              </dt>
+              <dd class="ty-cred__pw">
+                <code class="ty-value ty-value--pw" id="login-password">Argonwala@248656</code>
+                <button class="ty-copy" type="button" data-copy-password hidden aria-label="Copy password">
+                  <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/></svg>
+                  <span class="ty-copy__text">Copy</span>
+                </button>
+              </dd>
+            </div>
+          </dl>
+
+          <a class="ty-btn ty-btn--primary ty-btn--block" href="https://argon-login.thenextgenai.online/" target="_blank" rel="noopener noreferrer" data-access>
+            Open the login page
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <p class="ty-note"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg> Use the email address you entered at checkout with the password shown above.</p>
+
+          <div class="ty-fallback" data-copy-fallback hidden>
+            <label for="copy-details">Select and copy your login details:</label>
+            <textarea id="copy-details" readonly rows="5" spellcheck="false"></textarea>
+          </div>
+        </article>
+
+        <aside class="ty-side ty-reveal">
+          <article class="ty-card ty-card--tips">
+            <h3 class="ty-h3">Keep it handy</h3>
+            <ul class="ty-tips">
+              <li><span class="ty-chip ty-chip--mint" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Save this page.</strong> Bookmark it or copy the details into your notes app before you close the tab.</div></li>
+              <li><span class="ty-chip ty-chip--cyan" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><div><strong>Same email as checkout.</strong> Your access is tied to the purchase address, so sign in with that one.</div></li>
+              <li><span class="ty-chip ty-chip--violet" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><div><strong>Type it, do not retype it.</strong> Use the copy button so no character gets missed.</div></li>
+            </ul>
+          </article>
+          <article class="ty-card ty-card--glow">
+            <p class="ty-eyebrow ty-eyebrow--amber">Included with your purchase</p>
+            <p class="ty-glow__text">30-Minute Quick-Start Guide, 300+ workflow vault and the Creative Studio prompt pack &mdash; waiting inside your dashboard.</p>
+          </article>
+        </aside>
+      </div>
+
+      <div class="ty-steps">
+        <article class="ty-step ty-reveal" style="--acc:var(--cyan)">
+          <span class="ty-step__num">01</span>
+          <h3 class="ty-step__title">Log in</h3>
+          <p>Open the login page and sign in with your purchase email and the password above.</p>
+        </article>
+        <article class="ty-step ty-reveal" style="--acc:var(--blue)">
+          <span class="ty-step__num">02</span>
+          <h3 class="ty-step__title">Pick a tool</h3>
+          <p>Writing, code, images or video &mdash; choose the one your project needs today.</p>
+        </article>
+        <article class="ty-step ty-reveal" style="--acc:var(--amber)">
+          <span class="ty-step__num">03</span>
+          <h3 class="ty-step__title">Create</h3>
+          <p>Describe what you want in plain words and turn your first idea into something real.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLKIT ---------------------------------------------------------- -->
+  <section class="ty-sec ty-sec--toolkit" aria-labelledby="toolkit-title">
+    <div class="ty-toolkit__art" aria-hidden="true"></div>
+    <div class="ty-wrap">
+      <header class="ty-sechead ty-sechead--center ty-reveal">
+        <p class="ty-eyebrow ty-eyebrow--amber">Everything you unlocked</p>
+        <h2 class="ty-h2" id="toolkit-title">One login, a full <span class="ty-grad-warm">creative studio</span></h2>
+        <p class="ty-secsub">Powered by Gemini 4 Aragon and built to run in your browser &mdash; no installs, no extra subscriptions.</p>
+      </header>
+
+      <ul class="ty-features">
+        <li class="ty-feature ty-reveal" style="--acc:var(--cyan)">
+          <span class="ty-feature__ico" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="M4 20h4l10-10a2.8 2.8 0 0 0-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/></svg></span>
+          <h3 class="ty-feature__title">AI Chat &amp; Content Writing</h3>
+          <p>Brainstorm, research and write with AI that keeps your tone of voice.</p>
+        </li>
+        <li class="ty-feature ty-reveal" style="--acc:var(--blue)">
+          <span class="ty-feature__ico" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><path d="m9 8-4 4 4 4M15 8l4 4-4 4"/></svg></span>
+          <h3 class="ty-feature__title">Code Generation</h3>
+          <p>Build, debug and refine your next project without leaving the workspace.</p>
+        </li>
+        <li class="ty-feature ty-reveal" style="--acc:var(--violet)">
+          <span class="ty-feature__ico" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="1.6"/><path d="m5 18 5-5 3.5 3.5L17 13l2 2"/></svg></span>
+          <h3 class="ty-feature__title">Creative Studio</h3>
+          <p>Generate images and video clips for your brand, ads and social posts.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SUPPORT ---------------------------------------------------------- -->
+  <section class="ty-sec" id="access-help" aria-labelledby="support-title" tabindex="-1">
+    <div class="ty-wrap">
+      <div class="ty-card ty-card--support ty-reveal">
+        <div class="ty-support__art" aria-hidden="true"></div>
+        <div class="ty-support__body">
+          <span class="ty-chip ty-chip--amber ty-chip--lg" aria-hidden="true">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="2.5" y="13" width="4" height="6" rx="1.6"/><rect x="17.5" y="13" width="4" height="6" rx="1.6"/><path d="M20 19a4 4 0 0 1-4 3h-2"/></svg>
+          </span>
+          <p class="ty-eyebrow">We have got your back</p>
+          <h2 class="ty-h2" id="support-title">Stuck somewhere? Support is included.</h2>
+          <p class="ty-secsub">If a login detail does not work, or you have a question about your purchase, our team will help you get moving again.</p>
+          <div class="ty-actions">
+            <a class="ty-btn ty-btn--primary" href="#support-instructions" data-help-center>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.4-.7L3 21l1.9-4.6A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4Z"/></svg>
+              Open the Help Center
+            </a>
+            <a class="ty-btn ty-btn--ghost" data-ty-support hidden>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+              Email support
+            </a>
+          </div>
+          <ul class="ty-support__list" id="support-instructions">
+            <li>Include your order ID and purchase email so the team can find your order fast.</li>
+            <li>Your support contact details are also in your purchase receipt.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class="access-footer"><p>© <span data-year>2026</span> ArgonMax. All rights reserved.</p><a href="index.html">Back to ArgonMax</a></footer>
-<div class="access-toast" role="status" aria-live="polite" data-copy-status></div>
+
+<footer class="ty-footer">
+  <div class="ty-wrap ty-footer__inner">
+    <p>&copy; <span data-year>2026</span> ArgonMax. All rights reserved.</p>
+    <a href="index.html">Back to ArgonMax</a>
+  </div>
+</footer>
+
+<div class="ty-toast" role="status" aria-live="polite" data-copy-status></div>
 </body>
 </html>
