@@ -5,7 +5,7 @@
 window.ARGONMAX = {
   // Your JVZoo / WarriorPlus / Stripe buy link. Every "Get Instant Access" button uses it.
   // Leave empty while testing: buttons then scroll to the offer section.
-  checkoutUrl: "",
+  checkoutUrl: "https://launchpadjv.com/product/checkout/5707?page=4807&offer=574&offerProduct=6618",
 
   // Product login URL for the Access ArgonMax button on thank-you.html.
   // Set your checkout provider’s post-purchase redirect to yoursite.com/thank-you.html.
