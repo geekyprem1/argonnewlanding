@@ -1,0 +1,250 @@
+{
+  "generation_mode": "Built-in image_gen",
+  "section_count": 37,
+  "existing_backgrounds": 14,
+  "new_backgrounds": 23,
+  "assignments": [
+    {
+      "selector": ".hero",
+      "file": "hero-editorial.jpg"
+    },
+    {
+      "selector": ".problem",
+      "file": "uncomfortable-truth.jpg"
+    },
+    {
+      "selector": ".oldway",
+      "file": "five-walls.jpg"
+    },
+    {
+      "selector": ".cost",
+      "file": "why-now.jpg"
+    },
+    {
+      "selector": ".shift",
+      "file": "real-opportunity.jpg"
+    },
+    {
+      "selector": ".intro",
+      "file": "product-solution.jpg"
+    },
+    {
+      "selector": ".steps",
+      "file": "publishing-system.jpg"
+    },
+    {
+      "selector": ".uses",
+      "file": "profit-angles.jpg"
+    },
+    {
+      "selector": ".ba",
+      "file": "comparison-matrix.jpg"
+    },
+    {
+      "selector": ".vs",
+      "file": "master-comparison.jpg"
+    },
+    {
+      "selector": ".proof",
+      "file": "royalty-proof.jpg"
+    },
+    {
+      "selector": ".bonus-sec",
+      "file": "bonuses.jpg"
+    },
+    {
+      "selector": ".offer",
+      "file": "checkout.jpg"
+    },
+    {
+      "selector": ".faq",
+      "file": "faq.jpg"
+    },
+    {
+      "selector": ".what",
+      "file": "workspace-glass.jpg"
+    },
+    {
+      "selector": ".engine",
+      "file": "neural-orbits.jpg"
+    },
+    {
+      "selector": "#s16",
+      "file": "conversation-ribbons.jpg"
+    },
+    {
+      "selector": "#s17",
+      "file": "writer-paper-waves.jpg"
+    },
+    {
+      "selector": "#s18",
+      "file": "code-circuit-canopy.jpg"
+    },
+    {
+      "selector": "#s19",
+      "file": "template-mosaic.jpg"
+    },
+    {
+      "selector": "#s20",
+      "file": "document-origami.jpg"
+    },
+    {
+      "selector": "#s21",
+      "file": "creative-spectrum.jpg"
+    },
+    {
+      "selector": "#s22",
+      "file": "bulk-crystal-cascade.jpg"
+    },
+    {
+      "selector": "#s23",
+      "file": "model-constellations.jpg"
+    },
+    {
+      "selector": ".demo",
+      "file": "demo-cinematic.jpg"
+    },
+    {
+      "selector": ".bullets",
+      "file": "benefit-fan.jpg"
+    },
+    {
+      "selector": ".license",
+      "file": "license-gold-arches.jpg"
+    },
+    {
+      "selector": ".btotal",
+      "file": "bonus-ribbon.jpg"
+    },
+    {
+      "selector": ".anchor",
+      "file": "pricing-amber-orbit.jpg"
+    },
+    {
+      "selector": ".just",
+      "file": "value-balanced-beams.jpg"
+    },
+    {
+      "selector": ".guar",
+      "file": "guarantee-emerald.jpg"
+    },
+    {
+      "selector": ".risk",
+      "file": "risk-calm-pillars.jpg"
+    },
+    {
+      "selector": ".scarce",
+      "file": "launch-hourglass.jpg"
+    },
+    {
+      "selector": ".founder",
+      "file": "founders-silk.jpg"
+    },
+    {
+      "selector": ".final",
+      "file": "final-aurora-wave.jpg"
+    },
+    {
+      "selector": ".ps",
+      "file": "postscript-mint-arcs.jpg"
+    },
+    {
+      "selector": ".foot",
+      "file": "footer-star-trails.jpg"
+    }
+  ],
+  "generated_prompts": [
+    {
+      "file": "workspace-glass.jpg",
+      "prompt": "Use case: stylized-concept. Asset type: full-width website section background for ArgonMax, a colorful AI creation product. Create ONE polished landscape background, 1536x1024 composition, for the section explaining the all-in-one workspace. Deep royal navy and sapphire base, luminous turquoise translucent glass facets and a few tiny golden spheres confined to the outer corners. A distinctive diagonal folded-glass sculpture along the far left edge, three delicate blue arcs on the far right. Keep the central 75 percent a smooth, quiet, evenly dark navy field so white website copy remains readable without any overlay. Rich colorful edges, premium soft 3D studio render, subtle fine texture, restrained reflections. No words, no letters, no logos, no UI, no watermarks, no people. This is a standalone background image, not a mockup of a webpage."
+    },
+    {
+      "file": "neural-orbits.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep indigo-violet atmosphere. Sculptural concentric amethyst and electric-blue neural halos placed at the extreme upper-right and lower-left corners, very fine magenta orbit threads. Luxurious matte dark violet center."
+    },
+    {
+      "file": "conversation-ribbons.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep petrol navy. Flowing translucent turquoise speech-like folded ribbons at the far right edge, a tiny cobalt glass bubble at upper-left, subtle silver highlights. No actual speech text or pictograms."
+    },
+    {
+      "file": "writer-paper-waves.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep midnight indigo. Elegant pearl-blue folded paper wave sculptures and a thin coral ribbon along the far left and lower-right edges. Fine brushed paper texture, editorial atmosphere."
+    },
+    {
+      "file": "code-circuit-canopy.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Dark graphite blue. Precise emerald and cyan luminous circuit pathways hugging only the upper-right and bottom-left corners, small frosted rectangular crystals, crisp architectural geometry. No digits or code."
+    },
+    {
+      "file": "template-mosaic.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep marine blue. Asymmetric modular glass tile mosaic clustered tightly along left and upper-right outer borders, colors cobalt, lavender, peach, subtly tilted tiles, empty dark center."
+    },
+    {
+      "file": "document-origami.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep ink navy. A few translucent lilac and ice-blue origami paper sheets floating only at far right and lower-left edges, thin silver wire arcs, softly glowing corners. No writing on sheets."
+    },
+    {
+      "file": "creative-spectrum.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep aubergine-plum. Iridescent liquid-glass loops with rainbow reflections and warm coral highlights curling around far left and lower-right corners, artistic and playful, smooth quiet violet center."
+    },
+    {
+      "file": "bulk-crystal-cascade.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep midnight teal. A cascading sequence of small emerald, turquoise and gold crystal cubes confined to the extreme right edge, a low wave of navy glass at bottom-left. Rhythmic geometric structure."
+    },
+    {
+      "file": "model-constellations.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep blue-violet. A delicate constellation of linked luminous cyan, fuchsia and lavender spherical nodes along the far upper-left and lower-right corners, restrained cosmic depth. Do not draw any familiar logo."
+    },
+    {
+      "file": "demo-cinematic.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep navy-cobalt. Cinematic soft cyan and warm amber light streaks tracing two opposing corners like an open frame, subtle volumetric rays and brushed satin texture, no objects in the center."
+    },
+    {
+      "file": "benefit-fan.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep ocean petrol. Sculptural emerald and seafoam glass fan blades opening out from the lower-left corner, small copper accent spheres at upper-right, center uniformly dark."
+    },
+    {
+      "file": "license-gold-arches.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Dark ink blue. Elegant embossed gold and turquoise architectural arches along far right and far upper-left edges, premium metallic fine line tessellation, no badges or emblems."
+    },
+    {
+      "file": "bonus-ribbon.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep burgundy-purple. Abstract champagne gold and coral satin gift-like ribbons folding across the far bottom and upper-right corners, premium celebratory glow, no gift boxes in center."
+    },
+    {
+      "file": "pricing-amber-orbit.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep ultramarine. One dramatic fragmented amber-glass orbital ring cut off by the far right edge, subtle royal-blue crystalline shards at upper-left, quiet dark blue center."
+    },
+    {
+      "file": "value-balanced-beams.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep evergreen navy. Two offset brushed copper beams and floating mint glass discs at opposite outer edges, balanced sculptural composition, gentle directional lighting."
+    },
+    {
+      "file": "guarantee-emerald.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep forest emerald. A softly glowing abstract mint-glass protective arch on the left edge and fine champagne gold circular trails on the right edge. No text, no explicit shield emblem."
+    },
+    {
+      "file": "risk-calm-pillars.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep azure and midnight turquoise. Smooth aquamarine cylindrical pillars of different heights at far lower-right and upper-left corners, quiet reflective water texture at edges, calm reassuring lighting."
+    },
+    {
+      "file": "launch-hourglass.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep plum-burgundy. An artistic smoked-glass hourglass silhouette cut off along the far right border, tiny warm orange particles flowing inside it; copper arcs in lower-left, center empty and very dark."
+    },
+    {
+      "file": "founders-silk.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: LIGHT background: pearl white and pale lavender center for dark navy text. Distinctive sculptural teal and lilac silk folds confined to extreme upper-left and lower-right corners with fine copper threads, soft studio shadows. Keep center 75 percent light, clean and uncluttered."
+    },
+    {
+      "file": "final-aurora-wave.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep sapphire navy. Vibrant cobalt, electric-magenta and turquoise aurora-like glass waves sweeping diagonally along only the top-left and bottom-right edges, uplifting luminous atmosphere, uniformly dark center."
+    },
+    {
+      "file": "postscript-mint-arcs.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Deep violet-blue. Three broad mint and lavender satin arcs entering from the left border, a thin gold spiral accent partly cut off at far right, velvety matte dark center."
+    },
+    {
+      "file": "footer-star-trails.jpg",
+      "prompt": "Use case: stylized-concept. Create ONE standalone landscape raster background for a colorful ArgonMax AI product website section, 1536x1024 composition. Premium polished 3D material render with delicate fine texture. Keep the central 75 percent of the image empty, smooth and evenly dark for readable white website copy unless the scene explicitly requests a LIGHT background. Put distinctive decorations only at outer edges and corners; they must not intrude into the text region. No words, letters, numbers, logos, UI, people, watermarks or webpage mockup. Each background must have its own distinctive composition. Scene: Very deep midnight blue. Fine cyan star-like dot trails flowing along lower corners, a subtle sapphire curved horizon at the extreme bottom edge, discreet premium finish, no busy starfield in center."
+    }
+  ]
+}
