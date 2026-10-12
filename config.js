@@ -9,7 +9,10 @@ window.ARGONMAX = {
 
   // Product login URL for the Access ArgonMax button on thank-you.html.
   // Set your checkout provider’s post-purchase redirect to yoursite.com/thank-you.html.
-  accessUrl: "",
+  accessUrl: "https://argon-login.thenextgenai.online/",
+
+  // Help center used on the post-purchase account-access page.
+  helpCenterUrl: "https://teamkalki.tawk.help/",
 
   // Front-end price, number only (shown as $17 everywhere).
   price: "17",
