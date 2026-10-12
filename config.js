@@ -7,6 +7,10 @@ window.ARGONMAX = {
   // Leave empty while testing: buttons then scroll to the offer section.
   checkoutUrl: "",
 
+  // Product login URL for the Access ArgonMax button on thank-you.html.
+  // Set your checkout provider’s post-purchase redirect to yoursite.com/thank-you.html.
+  accessUrl: "",
+
   // Front-end price, number only (shown as $17 everywhere).
   price: "17",
 
