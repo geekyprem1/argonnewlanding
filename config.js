@@ -35,5 +35,20 @@ window.ARGONMAX = {
   // Footer links
   termsUrl: "#",
   privacyUrl: "#",
-  refundUrl: "#"
+  refundUrl: "#",
+
+  // OTO Funnel Configuration (OTO 1 to OTO 10)
+  // Set your checkout URL for each OTO here when ready.
+  oto: {
+    1: { name: "Unlimited Pro", price: "47", dsName: "Unlimited Pro Lite", dsPrice: "27", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto2.html" },
+    2: { name: "Creative PRO (Gold)", price: "87", dsName: "Creative PRO Silver", dsPrice: "47", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto3.html" },
+    3: { name: "DFY Pack", price: "67", dsName: "DFY Lite", dsPrice: "37", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto4.html" },
+    4: { name: "Automation / Bulk", price: "39", dsName: "Bulk Lite", dsPrice: "27", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto5.html" },
+    5: { name: "Traffic / Leads", price: "47", dsName: "Traffic Lite", dsPrice: "27", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto6.html" },
+    6: { name: "Agency", price: "97", dsName: "Agency Lite", dsPrice: "67", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto7.html" },
+    7: { name: "Reseller", price: "67", dsName: "Reseller Lite", dsPrice: "47", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto8.html" },
+    8: { name: "Whitelabel", price: "197", dsName: "Whitelabel Lite", dsPrice: "97", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto9.html" },
+    9: { name: "Enterprise / Team", price: "127", dsName: "Enterprise Lite", dsPrice: "77", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "oto10.html" },
+    10: { name: "VIP DFY + Coaching", price: "97", dsName: "VIP Lite", dsPrice: "47", checkoutUrl: "", dsCheckoutUrl: "", nextUrl: "thank-you.html" }
+  }
 };

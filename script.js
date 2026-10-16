@@ -20,8 +20,24 @@
   $$('svg.ico').forEach((s) => { s.setAttribute('aria-hidden', 'true'); s.setAttribute('focusable', 'false'); });
 
   /* ---------- Your details from config.js ---------- */
-  $$('[data-buy]').forEach((a) => {
-    if (C.checkoutUrl) { a.href = C.checkoutUrl; a.rel = 'noopener'; }
+  // Only the main offer section (#s42) button receives the external checkout URL.
+  // All other CTA buttons across the page smoothly scroll down to section #s42.
+  const offerBuyBtn = $('#s42 [data-buy]');
+  if (offerBuyBtn && C.checkoutUrl) {
+    offerBuyBtn.href = C.checkoutUrl;
+    offerBuyBtn.rel = 'noopener';
+  }
+
+  $$('a[href="#s42"]').forEach((a) => {
+    if (a !== offerBuyBtn) {
+      a.addEventListener('click', (e) => {
+        const target = $('#s42');
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
   });
   $$('[data-price]').forEach((el) => { el.textContent = '$' + String(C.price).replace(/^\$/, ''); });
   $$('[data-founder]').forEach((el) => { el.textContent = C.founderName; });
