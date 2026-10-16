@@ -784,3 +784,203 @@
 .ds-modal__skip:hover {
   color: #ff8a80;
 }
+
+/* ---------- OTO section artwork: one generated background per section ---------- */
+body[data-oto="1"] {
+  --oto-accent: #44dcff;
+  --oto-a-rgb: 39, 211, 246;
+  --oto-b-rgb: 47, 107, 255;
+  --oto-c-rgb: 154, 111, 255;
+  --oto-art-hero: url("assets/backgrounds/oto1-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto1-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto1-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto1-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto1-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto1-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto1-decision.webp");
+}
+body[data-oto="2"] {
+  --oto-accent: #ff72c4;
+  --oto-a-rgb: 255, 72, 173;
+  --oto-b-rgb: 131, 80, 255;
+  --oto-c-rgb: 39, 211, 246;
+  --oto-art-hero: url("assets/backgrounds/oto2-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto2-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto2-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto2-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto2-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto2-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto2-decision.webp");
+}
+body[data-oto="3"] {
+  --oto-accent: #ffd078;
+  --oto-a-rgb: 255, 178, 58;
+  --oto-b-rgb: 205, 99, 22;
+  --oto-c-rgb: 255, 222, 128;
+  --oto-art-hero: url("assets/backgrounds/oto3-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto3-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto3-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto3-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto3-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto3-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto3-decision.webp");
+}
+body[data-oto="4"] {
+  --oto-accent: #52e6da;
+  --oto-a-rgb: 0, 194, 255;
+  --oto-b-rgb: 37, 99, 235;
+  --oto-c-rgb: 38, 220, 174;
+  --oto-art-hero: url("assets/backgrounds/oto4-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto4-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto4-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto4-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto4-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto4-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto4-decision.webp");
+}
+body[data-oto="5"] {
+  --oto-accent: #ff9a70;
+  --oto-a-rgb: 255, 104, 86;
+  --oto-b-rgb: 243, 54, 133;
+  --oto-c-rgb: 255, 174, 49;
+  --oto-art-hero: url("assets/backgrounds/oto5-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto5-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto5-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto5-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto5-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto5-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto5-decision.webp");
+}
+body[data-oto="6"] {
+  --oto-accent: #62efb8;
+  --oto-a-rgb: 39, 223, 161;
+  --oto-b-rgb: 3, 168, 168;
+  --oto-c-rgb: 88, 131, 255;
+  --oto-art-hero: url("assets/backgrounds/oto6-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto6-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto6-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto6-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto6-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto6-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto6-decision.webp");
+}
+body[data-oto="7"] {
+  --oto-accent: #c5a0ff;
+  --oto-a-rgb: 166, 118, 255;
+  --oto-b-rgb: 255, 189, 74;
+  --oto-c-rgb: 75, 107, 255;
+  --oto-art-hero: url("assets/backgrounds/oto7-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto7-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto7-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto7-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto7-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto7-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto7-decision.webp");
+}
+body[data-oto="8"] {
+  --oto-accent: #a5e6ff;
+  --oto-a-rgb: 128, 213, 255;
+  --oto-b-rgb: 140, 137, 255;
+  --oto-c-rgb: 56, 213, 200;
+  --oto-art-hero: url("assets/backgrounds/oto8-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto8-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto8-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto8-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto8-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto8-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto8-decision.webp");
+}
+body[data-oto="9"] {
+  --oto-accent: #82c6ff;
+  --oto-a-rgb: 76, 157, 255;
+  --oto-b-rgb: 18, 213, 223;
+  --oto-c-rgb: 174, 139, 255;
+  --oto-art-hero: url("assets/backgrounds/oto9-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto9-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto9-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto9-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto9-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto9-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto9-decision.webp");
+}
+body[data-oto="10"] {
+  --oto-accent: #ffabc9;
+  --oto-a-rgb: 250, 140, 182;
+  --oto-b-rgb: 173, 124, 255;
+  --oto-c-rgb: 255, 178, 90;
+  --oto-art-hero: url("assets/backgrounds/oto10-hero.webp?v=2");
+  --oto-art-feature: url("assets/backgrounds/oto10-feature.webp");
+  --oto-art-comparison: url("assets/backgrounds/oto10-comparison.webp");
+  --oto-art-offer: url("assets/backgrounds/oto10-offer.webp");
+  --oto-art-guarantee: url("assets/backgrounds/oto10-guarantee.webp");
+  --oto-art-faq: url("assets/backgrounds/oto10-faq.webp");
+  --oto-art-decision: url("assets/backgrounds/oto10-decision.webp");
+}
+
+body[data-oto] main > section.sec,
+body[data-oto] main > section.decision-sec {
+  color: var(--text);
+  background-color: #070b16;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+body[data-oto] main > section.sec .h2 { color: #f4f8ff; }
+body[data-oto] main > section.sec .eyebrow { color: var(--oto-accent); }
+body[data-oto] main > section.sec .lead { color: #c4d2e7; }
+body[data-oto] main > section.problem::before {
+  background: radial-gradient(circle, rgba(var(--oto-a-rgb), .17), transparent 66%);
+}
+body[data-oto] main > section.problem .problem__copy .still {
+  color: var(--oto-accent);
+  text-decoration-color: var(--oto-accent);
+}
+body[data-oto] main > section.offer .h2 .grad-amber {
+  background-image: linear-gradient(95deg, var(--oto-accent), #f7faff);
+}
+
+/* Each section uses its own generated WebP while the subtle veil protects copy contrast. */
+body[data-oto] main > section:nth-of-type(1) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-hero);
+}
+body[data-oto] main > section:nth-of-type(2) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-feature);
+}
+body[data-oto] main > section:nth-of-type(3) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-comparison);
+}
+body[data-oto] main > section:nth-of-type(4) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-offer);
+}
+body[data-oto] main > section:nth-of-type(5) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-guarantee);
+}
+body[data-oto] main > section:nth-of-type(6) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-faq);
+}
+body[data-oto] main > section:nth-of-type(7) {
+  background-image: linear-gradient(180deg, rgba(4, 8, 18, .12), rgba(4, 8, 18, .24)), var(--oto-art-decision);
+}
+
+body[data-oto] main > section#decision {
+  color: var(--text);
+  border-color: rgba(151, 181, 231, .18);
+}
+body[data-oto] main > section#decision .decision-desc { color: #c4d2e7; }
+
+/* Distinct hero focal points keep each generated composition visible at desktop and mobile widths. */
+body[data-oto="1"] { --oto-hero-position: 68% 50%; }
+body[data-oto="2"] { --oto-hero-position: 70% 40%; }
+body[data-oto="3"] { --oto-hero-position: 76% 50%; }
+body[data-oto="4"] { --oto-hero-position: 54% 50%; }
+body[data-oto="5"] { --oto-hero-position: 70% 50%; }
+body[data-oto="6"] { --oto-hero-position: 82% 50%; }
+body[data-oto="7"] { --oto-hero-position: 72% 50%; }
+body[data-oto="8"] { --oto-hero-position: 76% 58%; }
+body[data-oto="9"] { --oto-hero-position: 74% 50%; }
+body[data-oto="10"] { --oto-hero-position: 82% 44%; }
+body[data-oto] main > section:nth-of-type(1) {
+  background-position: center center, var(--oto-hero-position, center center);
+}
+
+/* Bump hero asset URLs so browsers fetch the newly generated compositions. */
