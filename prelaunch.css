@@ -1,0 +1,4 @@
+/* Keep the index design; checkout buttons are unavailable before launch. */
+[data-prelaunch-purchase]:disabled{cursor:default}
+[data-prelaunch-purchase]:disabled:hover{transform:none;filter:none}
+[data-prelaunch-purchase]:disabled:hover::after{transform:translateX(-120%)}

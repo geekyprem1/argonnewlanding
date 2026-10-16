@@ -258,6 +258,10 @@ button{font:inherit;color:inherit}
 .cta__micro span{display:inline-flex;align-items:center;gap:.55em}
 .cta__micro .ico{color:var(--green);width:1.1em;height:1.1em}
 
+/* 6 · Gemini AI landscape */
+.ai-landscape{position:relative;padding-block:clamp(24px,4vw,56px);background:#02050c}
+.ai-landscape img{width:100%;height:auto;border-radius:var(--r-md)}
+
 /* 7 · trust bar */
 .trustbar{position:relative;overflow:hidden;border-block:1px solid var(--line);background:linear-gradient(180deg,rgba(11,21,39,.9),rgba(6,12,24,.95))}
 .trust__track{display:flex;width:max-content;min-width:100%;justify-content:center}
