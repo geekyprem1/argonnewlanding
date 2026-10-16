@@ -163,15 +163,6 @@
   }, { passive: true });
   onScroll();
 
-  // FAQ Accordion
-  $$('.qa').forEach((qa) => {
-    const q = $('.qa__q', qa);
-    if (!q) return;
-    q.addEventListener('click', () => {
-      const open = qa.classList.toggle('is-open');
-      q.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
 
   // Sticky buy bar
   const sticky = $('#otoSticky');

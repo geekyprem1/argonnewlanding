@@ -41,6 +41,7 @@
 <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
 <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
 <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
 </svg>
 
 <div class="progress" aria-hidden="true"><i></i></div>
@@ -142,7 +143,7 @@
     <ul class="trust">
       <li><svg class="ico"><use href="#i-lock"/></svg>One-time payment</li>
       <li><svg class="ico"><use href="#i-zap"/></svg>Added to your existing account</li>
-      <li><svg class="ico"><use href="#i-clock"/></svg>Activated within [ACTIVATION_TIME]</li>
+      <li><svg class="ico"><use href="#i-clock"/></svg>Activated within minutes of purchase</li>
       <li><svg class="ico"><use href="#i-shield-check"/></svg>30-day money-back guarantee</li>
     </ul>
   </div>
@@ -203,7 +204,7 @@
         <div class="oto-step-card reveal" style="--d:80ms">
           <div class="oto-step-card__num">2</div>
           <h3 class="oto-step-card__h">Account Switch-On</h3>
-          <p class="oto-step-card__p">We switch it on within [ACTIVATION_TIME] and email you an instant confirmation.</p>
+          <p class="oto-step-card__p">We switch it on within minutes of purchase and email you an instant confirmation.</p>
         </div>
         <div class="oto-step-card reveal" style="--d:160ms">
           <div class="oto-step-card__num">3</div>
@@ -386,7 +387,7 @@
             <span style="font-size:1.4rem;color:var(--muted);text-decoration:line-through">$297/yr</span>
             <b data-oto-price style="font-size:3.8rem;color:var(--amber)">$67</b>
           </div>
-          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within [ACTIVATION_TIME] &middot; 30-day money-back guarantee</p>
+          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within minutes of purchase &middot; 30-day money-back guarantee</p>
         </div>
 
         <ul class="card__list" style="text-align:left;max-width:620px;margin-inline:auto">
@@ -433,7 +434,7 @@
         <p class="eyebrow eyebrow--green reveal">Try It 100% Risk-Free</p>
         <h2 class="h2 reveal" style="--d:60ms">30-Day Money-Back Guarantee</h2>
         <p class="lead reveal" style="--d:120ms">Try it for 30 days. Put the new features to work on real projects.</p>
-        <p class="lead reveal" style="--d:180ms">If it isn't right for you, email [SUPPORT_EMAIL] and we'll refund this upgrade immediately. No hassle, no friction.</p>
+        <p class="lead reveal" style="--d:180ms">If it isn't right for you, email our 24/7 customer support desk and we'll refund this upgrade immediately. No hassle, no friction.</p>
       </div>
     </div>
 
@@ -449,7 +450,7 @@
         </div>
         <div class="oto-next-step">
           <h4>2) Quick Activation</h4>
-          <p>We activate it within [ACTIVATION_TIME] and send an email confirmation.</p>
+          <p>We activate it within minutes of purchase and send an email confirmation.</p>
         </div>
         <div class="oto-next-step">
           <h4>3) Ready To Create</h4>
@@ -467,9 +468,36 @@
         <h2 class="h2 reveal" style="--d:80ms">Frequently Asked Questions</h2>
       </header>
 
-      <div class="faqs" style="margin-top:clamp(32px,4vw,50px)">
-        <div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>What exactly can I sell?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p><code>[e.g. front-end accounts only.]</code></p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>How do my buyers get their accounts?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p><code>[Process.]</code></p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Who supports my buyers?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p><code>[Truth.]</code></p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Any limits?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p><code>[Per your license terms.]</code></p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Where is the kit?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>In the Reseller tab.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Can I set my own price?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Yes.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>When do I get access?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Within <code>[ACTIVATION_TIME]</code>.</p></div></div>
-      </div>
+      <div class="faq__list">
+      <details class="qa reveal" name="faq">
+        <summary><span>What exactly can I sell?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>You can sell front-end ArgonMax accounts with core generation tools. You set your own prices and collect payments directly.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>How do my buyers get their accounts?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Simply submit your buyer's email through your Reseller tab, and our team will provision their account and send login details.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Who supports my buyers?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Our in-house technical team handles all software hosting, server maintenance, and core product updates.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Are there any sales limits?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>You can sell up to 100 user accounts under this standard reseller license.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Where is the sales kit?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>In your Reseller tab inside the ArgonMax dashboard, ready to download.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Can I set my own price?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Yes, you can charge any price you like and keep 100% of what you charge.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>When do I get access?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Activated in your dashboard within minutes of purchase. You'll receive an email as soon as Reseller status is enabled.</p></div>
+      </details>
+    </div>
     </div>
   </section>
 

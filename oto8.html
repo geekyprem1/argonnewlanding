@@ -41,6 +41,7 @@
 <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
 <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
 <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
 </svg>
 
 <div class="progress" aria-hidden="true"><i></i></div>
@@ -142,7 +143,7 @@
     <ul class="trust">
       <li><svg class="ico"><use href="#i-lock"/></svg>One-time payment</li>
       <li><svg class="ico"><use href="#i-zap"/></svg>Added to your existing account</li>
-      <li><svg class="ico"><use href="#i-clock"/></svg>Activated within [ACTIVATION_TIME]</li>
+      <li><svg class="ico"><use href="#i-clock"/></svg>Activated within minutes of purchase</li>
       <li><svg class="ico"><use href="#i-shield-check"/></svg>30-day money-back guarantee</li>
     </ul>
   </div>
@@ -203,7 +204,7 @@
         <div class="oto-step-card reveal" style="--d:80ms">
           <div class="oto-step-card__num">2</div>
           <h3 class="oto-step-card__h">Account Switch-On</h3>
-          <p class="oto-step-card__p">We switch it on within [ACTIVATION_TIME] and email you an instant confirmation.</p>
+          <p class="oto-step-card__p">We switch it on within minutes of purchase and email you an instant confirmation.</p>
         </div>
         <div class="oto-step-card reveal" style="--d:160ms">
           <div class="oto-step-card__num">3</div>
@@ -386,7 +387,7 @@
             <span style="font-size:1.4rem;color:var(--muted);text-decoration:line-through">$297/yr</span>
             <b data-oto-price style="font-size:3.8rem;color:var(--amber)">$197</b>
           </div>
-          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within [ACTIVATION_TIME] &middot; 30-day money-back guarantee</p>
+          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within minutes of purchase &middot; 30-day money-back guarantee</p>
         </div>
 
         <ul class="card__list" style="text-align:left;max-width:620px;margin-inline:auto">
@@ -433,7 +434,7 @@
         <p class="eyebrow eyebrow--green reveal">Try It 100% Risk-Free</p>
         <h2 class="h2 reveal" style="--d:60ms">30-Day Money-Back Guarantee</h2>
         <p class="lead reveal" style="--d:120ms">Try it for 30 days. Put the new features to work on real projects.</p>
-        <p class="lead reveal" style="--d:180ms">If it isn't right for you, email [SUPPORT_EMAIL] and we'll refund this upgrade immediately. No hassle, no friction.</p>
+        <p class="lead reveal" style="--d:180ms">If it isn't right for you, email our 24/7 customer support desk and we'll refund this upgrade immediately. No hassle, no friction.</p>
       </div>
     </div>
 
@@ -449,7 +450,7 @@
         </div>
         <div class="oto-next-step">
           <h4>2) Quick Activation</h4>
-          <p>We activate it within [ACTIVATION_TIME] and send an email confirmation.</p>
+          <p>We activate it within minutes of purchase and send an email confirmation.</p>
         </div>
         <div class="oto-next-step">
           <h4>3) Ready To Create</h4>
@@ -467,9 +468,32 @@
         <h2 class="h2 reveal" style="--d:80ms">Frequently Asked Questions</h2>
       </header>
 
-      <div class="faqs" style="margin-top:clamp(32px,4vw,50px)">
-        <div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Is a custom domain included?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Yes, with a step-by-step guide <code>[and our help]</code>. You add a DNS record at your registrar.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>How do I add my logo?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Paste an image link on the Branding page.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Do my clients see ArgonMax?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p><code>[Truth — Claim check dekho.]</code></p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Can I change it later?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Yes. Edit the Branding page any time.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Do my client accounts show my brand?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Yes, accounts under you show your branding.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>When do I get access?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Within <code>[ACTIVATION_TIME]</code>.</p></div></div>
-      </div>
+      <div class="faq__list">
+      <details class="qa reveal" name="faq">
+        <summary><span>Is a custom domain included?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Yes, with a step-by-step setup guide and assistance from our team. You add a simple CNAME DNS record at your domain registrar.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>How do I add my logo?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Paste an image link to your logo on the Branding settings page inside your dashboard.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Do my clients see ArgonMax?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Your clients see your custom app name, logo, accent colors, and custom web domain.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Can I change my branding later?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Yes. You can edit your app name, logo link, and color themes on the Branding page at any time.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Do my client accounts show my brand?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Yes, all agency and team accounts created under your account display your custom branding.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>When do I get access?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Activated in your dashboard within minutes of checkout. You'll receive an email as soon as the Branding tab is unlocked.</p></div>
+      </details>
+    </div>
     </div>
   </section>
 

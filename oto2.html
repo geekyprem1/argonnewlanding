@@ -41,6 +41,7 @@
 <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
 <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
 <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
 </svg>
 
 <div class="progress" aria-hidden="true"><i></i></div>
@@ -142,7 +143,7 @@
     <ul class="trust">
       <li><svg class="ico"><use href="#i-lock"/></svg>One-time payment</li>
       <li><svg class="ico"><use href="#i-zap"/></svg>Added to your existing account</li>
-      <li><svg class="ico"><use href="#i-clock"/></svg>Activated within [ACTIVATION_TIME]</li>
+      <li><svg class="ico"><use href="#i-clock"/></svg>Activated within minutes of purchase</li>
       <li><svg class="ico"><use href="#i-shield-check"/></svg>30-day money-back guarantee</li>
     </ul>
   </div>
@@ -203,7 +204,7 @@
         <div class="oto-step-card reveal" style="--d:80ms">
           <div class="oto-step-card__num">2</div>
           <h3 class="oto-step-card__h">Account Switch-On</h3>
-          <p class="oto-step-card__p">We switch it on within [ACTIVATION_TIME] and email you an instant confirmation.</p>
+          <p class="oto-step-card__p">We switch it on within minutes of purchase and email you an instant confirmation.</p>
         </div>
         <div class="oto-step-card reveal" style="--d:160ms">
           <div class="oto-step-card__num">3</div>
@@ -386,7 +387,7 @@
             <span style="font-size:1.4rem;color:var(--muted);text-decoration:line-through">$297/yr</span>
             <b data-oto-price style="font-size:3.8rem;color:var(--amber)">$87</b>
           </div>
-          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within [ACTIVATION_TIME] &middot; 30-day money-back guarantee</p>
+          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within minutes of purchase &middot; 30-day money-back guarantee</p>
         </div>
 
         <ul class="card__list" style="text-align:left;max-width:620px;margin-inline:auto">
@@ -433,7 +434,7 @@
         <p class="eyebrow eyebrow--green reveal">Try It 100% Risk-Free</p>
         <h2 class="h2 reveal" style="--d:60ms">30-Day Money-Back Guarantee</h2>
         <p class="lead reveal" style="--d:120ms">Try it for 30 days. Put the new features to work on real projects.</p>
-        <p class="lead reveal" style="--d:180ms">If it isn't right for you, email [SUPPORT_EMAIL] and we'll refund this upgrade immediately. No hassle, no friction.</p>
+        <p class="lead reveal" style="--d:180ms">If it isn't right for you, email our 24/7 customer support desk and we'll refund this upgrade immediately. No hassle, no friction.</p>
       </div>
     </div>
 
@@ -449,7 +450,7 @@
         </div>
         <div class="oto-next-step">
           <h4>2) Quick Activation</h4>
-          <p>We activate it within [ACTIVATION_TIME] and send an email confirmation.</p>
+          <p>We activate it within minutes of purchase and send an email confirmation.</p>
         </div>
         <div class="oto-next-step">
           <h4>3) Ready To Create</h4>
@@ -467,9 +468,36 @@
         <h2 class="h2 reveal" style="--d:80ms">Frequently Asked Questions</h2>
       </header>
 
-      <div class="faqs" style="margin-top:clamp(32px,4vw,50px)">
-        <div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Do credits renew monthly?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>No. They're one-time credits.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Where do my files go?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Your Creative Studio gallery.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>How long are videos?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>10 seconds at 720p.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Which shapes can I choose?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Images: 1:1, 3:2, 2:3. Video: 16:9, 9:16, 4:3, 3:4, 3:2, 2:3, 1:1.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>What if a generation fails?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>The credit is returned automatically.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>Do video and image credits share a balance?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>No. They're separate.</p></div></div><div class="qa reveal"><button class="qa__q" type="button" aria-expanded="false"><span>When do I get access?</span><svg class="ico"><use href="#i-chevron-down"/></svg></button><div class="qa__a"><p>Within <code>[ACTIVATION_TIME]</code>.</p></div></div>
-      </div>
+      <div class="faq__list">
+      <details class="qa reveal" name="faq">
+        <summary><span>Do credits renew monthly?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>No. They are one-time credits added to your account balance with zero recurring monthly charges.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Where do my files go?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Everything is automatically saved to your private Creative Studio gallery inside ArgonMax.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>How long are videos?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Videos are generated as 10-second clips rendered in 720p HD resolution across 7 popular aspect ratios.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Which shapes can I choose?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Images: square (1:1), landscape (3:2), and portrait (2:3). Videos: 16:9, 9:16, 4:3, 3:4, 3:2, 2:3, and 1:1.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>What if a generation fails?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Your credit is returned to your account balance automatically. You never lose a credit on a failed generation.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>Do video and image credits share a balance?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>No. Image and video credits have separate dedicated balances in your dashboard.</p></div>
+      </details>
+      <details class="qa reveal" name="faq">
+        <summary><span>When do I get access?</span><span class="qa__plus" aria-hidden="true"><svg class="ico"><use href="#i-plus"/></svg></span></summary>
+        <div class="qa__a"><p>Activated in your dashboard within minutes of purchase. You'll receive an email as soon as Creative Studio is ready.</p></div>
+      </details>
+    </div>
     </div>
   </section>
 

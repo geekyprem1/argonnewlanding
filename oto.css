@@ -501,6 +501,66 @@
   gap: 16px;
 }
 
+/* ---------- FAQ Details Accordion Clean Styling ---------- */
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: clamp(32px, 4vw, 52px);
+  text-align: left;
+}
+details.qa {
+  border: 1px solid var(--line-2);
+  border-radius: var(--r-md);
+  background: linear-gradient(170deg, rgba(20, 36, 68, 0.65), rgba(9, 16, 34, 0.85));
+  overflow: hidden;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+details.qa[open] {
+  border-color: rgba(39, 211, 246, 0.5);
+  box-shadow: 0 20px 50px -20px rgba(39, 211, 246, 0.3);
+}
+details.qa summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: clamp(16px, 2vw, 22px) clamp(18px, 2.4vw, 28px);
+  cursor: pointer;
+  list-style: none;
+  font: 700 clamp(1.02rem, 0.4vw + 0.96rem, 1.25rem)/1.35 var(--f-display);
+  letter-spacing: -0.01em;
+  color: #ffffff !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: none;
+  user-select: none;
+}
+details.qa summary::-webkit-details-marker {
+  display: none !important;
+}
+.qa__plus {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line-2);
+  color: var(--cyan);
+  transition: transform 0.3s var(--ease), background 0.3s;
+}
+details.qa[open] .qa__plus {
+  transform: rotate(45deg);
+  background: rgba(39, 211, 246, 0.15);
+}
+.qa__a {
+  padding: 0 clamp(18px, 2.4vw, 28px) clamp(18px, 2.2vw, 26px);
+  font-size: clamp(0.96rem, 0.3vw + 0.92rem, 1.1rem);
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
 /* ---------- Mobile responsiveness ---------- */
 @media (max-width: 768px) {
   .oto-progress {
