@@ -120,3 +120,59 @@
   .jv-v2 .dash-chips span:nth-child(n+3){display:none}
   .jv-v2 .studio-facts{grid-template-columns:1fr}
 }
+/* Partnership & Reciprocity Promise Section */
+.jv-v2 .partnership-section{background:linear-gradient(180deg,#f3f8fd 0%,#eaf3fc 100%);border-block:1px solid #d4e3f3;padding:88px 0}
+.jv-v2 .partner-hero-card{background:#fff;border:1px solid #c8dbee;border-radius:24px;padding:56px;box-shadow:0 24px 50px #10223d0d}
+.jv-v2 .partner-hero-top{display:grid;grid-template-columns:1fr 220px;gap:36px;align-items:center}
+.jv-v2 .partner-heading{min-width:0}
+.jv-v2 .partner-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:1.4px;font-weight:750;color:#075bd8;margin-bottom:16px}
+.jv-v2 .partner-heading h2{font-size:clamp(30px,3.6vw,46px);line-height:1.15;letter-spacing:-1.2px;color:#10223d}
+.jv-v2 .partner-heading h2>span{color:#075bd8}
+.jv-v2 .partner-mascot-wrap{display:grid;place-items:center}
+.jv-v2 .partner-mascot-wrap img{width:180px;height:auto;filter:drop-shadow(0 14px 20px #10223d24)}
+.jv-v2 .partner-principle-banner{display:flex;align-items:center;gap:14px;background:#ebf5ff;border:1px solid #b9d7f6;border-radius:12px;padding:14px 20px;margin:28px 0 20px}
+.jv-v2 .principle-badge{background:#075bd8;color:#fff;border-radius:6px;padding:5px 10px;font-size:10px;font-weight:750;letter-spacing:1px;white-space:nowrap;flex-shrink:0}
+.jv-v2 .partner-principle-banner p{font-size:15px;color:#1a3e68;line-height:1.5;margin:0}
+.jv-v2 .partner-principle-banner strong{color:#075bd8;font-weight:750}
+.jv-v2 .partner-lead-copy{font-size:17px;line-height:1.8;color:#53647d;margin-bottom:36px;max-width:960px}
+.jv-v2 .promises-block{margin:36px 0 32px}
+.jv-v2 .promises-heading{margin-bottom:20px}
+.jv-v2 .promises-heading .card-kicker{font-size:11px;font-weight:750;letter-spacing:1.3px;color:#075bd8;display:block;margin-bottom:4px}
+.jv-v2 .promises-heading h3{font-size:24px;letter-spacing:-.6px;color:#10223d}
+.jv-v2 .promises-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.jv-v2 .promise-card{display:flex;gap:18px;align-items:flex-start;background:#f9fbfd;border:1px solid #dbe6f2;border-radius:16px;padding:24px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.jv-v2 .promise-card:hover{transform:translateY(-2px);border-color:#b9d5f3;box-shadow:0 12px 28px #10223d0a}
+.jv-v2 .promise-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;color:#fff;flex-shrink:0}
+.jv-v2 .promise-icon svg{width:22px;height:22px}
+.jv-v2 .promise-card h4{font-size:18px;letter-spacing:-.4px;color:#10223d;margin-bottom:6px;font-weight:750}
+.jv-v2 .promise-card p{font-size:14px;line-height:1.7;color:#53647d;margin:0}
+.jv-v2 .founder-reciprocity-callout{position:relative;background:linear-gradient(135deg,#0b1d35 0%,#132b4b 100%);color:#fff;border-radius:18px;padding:36px 40px;margin-top:36px;box-shadow:0 20px 40px #0b1d3526;overflow:hidden}
+.jv-v2 .callout-sparkle{position:absolute;top:16px;right:24px;font-size:32px;color:#00bfe9;opacity:.4}
+.jv-v2 .founder-reciprocity-callout blockquote{margin:0;font-size:clamp(17px,2vw,21px);line-height:1.65;font-weight:600;color:#e8f4ff;letter-spacing:-.3px}
+.jv-v2 .callout-signoff{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:28px;padding-top:24px;border-top:1px solid #233e61;flex-wrap:wrap}
+.jv-v2 .signoff-author{display:flex;align-items:center;gap:14px}
+.jv-v2 .signoff-portraits{display:flex;align-items:center}
+.jv-v2 .signoff-portraits img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid #00bfe9;margin-right:-10px}
+.jv-v2 .signoff-portraits img:last-child{margin-right:0;border-color:#38bdf8}
+.jv-v2 .signoff-meta strong{display:block;font-size:16px;color:#fff}
+.jv-v2 .signoff-meta small{display:block;color:#9bb5d4;font-size:13px}
+.jv-v2 .callout-socials{display:flex;gap:10px;flex-wrap:wrap}
+.jv-v2 .callout-socials .button{background:#ffffff14;border:1px solid #486a91;color:#fff}
+.jv-v2 .callout-socials .button:hover{background:#075bd8;border-color:#075bd8}
+@media(max-width:900px){
+  .jv-v2 .partner-hero-card{padding:36px 28px}
+  .jv-v2 .partner-hero-top{grid-template-columns:1fr;gap:20px}
+  .jv-v2 .partner-mascot-wrap{display:none}
+  .jv-v2 .promises-grid{grid-template-columns:1fr}
+  .jv-v2 .partner-principle-banner{flex-direction:column;align-items:flex-start;gap:8px}
+}
+@media(max-width:640px){
+  .jv-v2 .partnership-section{padding:54px 0}
+  .jv-v2 .partner-hero-card{padding:26px 18px;border-radius:18px}
+  .jv-v2 .partner-heading h2{font-size:clamp(26px,7.5vw,34px)}
+  .jv-v2 .promise-card{padding:18px;gap:14px}
+  .jv-v2 .founder-reciprocity-callout{padding:26px 20px}
+  .jv-v2 .callout-signoff{flex-direction:column;align-items:flex-start;gap:16px}
+  .jv-v2 .callout-socials{width:100%}
+  .jv-v2 .callout-socials .button{width:100%;justify-content:center}
+}
