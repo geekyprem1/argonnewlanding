@@ -1089,7 +1089,7 @@ pre .k{color:#7fa6ff}pre .f{color:#5fe0ff}pre .s{color:#ffd070}pre .c{color:#6e8
 .hero .deck__text strong{color:#075bd5}
 .hero .deck__text{min-width:0;padding:clamp(22px,2.6vw,34px);border:1px solid #bfd7e9;border-left:4px solid #12839a;border-radius:20px;background:#f8fcff;box-shadow:0 16px 42px -22px rgba(19,56,91,.35)}
 .hero .deck__text p{color:#203e5c}
-.hero-feature-marquee{display:flex;align-items:center;gap:8px;width:min(1080px,100%);min-width:0;margin-top:30px;padding:4px 7px 4px 0;border:1px solid #3a6a88;border-radius:14px;background:linear-gradient(110deg,#102d4b,#091a30);box-shadow:0 12px 30px -18px #173c6580;color:#edf7ff;text-align:left}
+.hero-feature-marquee{display:flex;align-items:center;gap:8px;width:100vw;max-width:none;min-width:0;flex-shrink:0;margin-top:30px;padding:4px 7px 4px 0;border:1px solid #3a6a88;border-inline:0;border-radius:0;background:linear-gradient(110deg,#102d4b,#091a30);box-shadow:0 12px 30px -18px #173c6580;color:#edf7ff;text-align:left}
 .hero-feature-marquee__viewport{flex:1;min-width:0;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 20px,#000 calc(100% - 20px),transparent)}
 .hero-feature-marquee__track{display:flex;width:max-content;animation:hero-features-scroll 36s linear infinite;will-change:transform}
 .hero-feature-marquee ul{display:flex;align-items:center;flex:none;margin:0;padding:0;list-style:none}
