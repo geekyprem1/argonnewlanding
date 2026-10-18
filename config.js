@@ -32,10 +32,14 @@ window.ARGONMAX = {
   // Empty = no countdown is shown (we never fake urgency).
   launchEndsAt: "",
 
+  // Primary checkout countdown. A launchEndsAt deadline takes priority when set.
+  // Otherwise starts once per browser and stays expired after reaching zero.
+  offerCountdownMinutes: 49,
+
   // Footer links
-  termsUrl: "#",
-  privacyUrl: "#",
-  refundUrl: "#",
+  termsUrl: "terms-of-use.html",
+  privacyUrl: "privacy-policy.html",
+  refundUrl: "refund-policy.html",
 
   // OTO Funnel Configuration (OTO 1 to OTO 10)
   // Set your checkout URL for each OTO here when ready.

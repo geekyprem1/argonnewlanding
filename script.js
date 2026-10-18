@@ -16,27 +16,51 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const hasIO = 'IntersectionObserver' in window;
 
+  /* ---------- Final checkout: use the supplied purchase URL and remove declines ---------- */
+  const finalCheckout = $('#offer-checkout .forgeContainer');
+  if (finalCheckout) {
+    const updateFinalCheckout = () => {
+      const buy = $('.btn-forge:not(.btn-forge-continue)', finalCheckout);
+      if (buy) {
+        buy.href = 'https://launchpadjv.com/product/checkout/5707?page=4807&offer=574&offerProduct=6618';
+        buy.rel = 'noopener';
+      }
+      $$('.btn-forge-continue', finalCheckout).forEach((link) => link.remove());
+    };
+    new MutationObserver(updateFinalCheckout).observe(finalCheckout, { childList: true, subtree: true });
+    updateFinalCheckout();
+  }
+
+  /* ---------- Creative examples: reveal the complete gallery on demand ---------- */
+  const galleryToggle = $('[data-gallery-toggle]');
+  const extraCreations = $$('[data-gallery-extra]');
+  if (galleryToggle && extraCreations.length) {
+    extraCreations.forEach((card) => { card.hidden = true; });
+    galleryToggle.hidden = false;
+    galleryToggle.addEventListener('click', () => {
+      const expanded = galleryToggle.getAttribute('aria-expanded') !== 'true';
+      extraCreations.forEach((card) => { card.hidden = !expanded; });
+      galleryToggle.setAttribute('aria-expanded', String(expanded));
+      galleryToggle.textContent = expanded ? 'Show fewer examples' : 'Show all 29 examples';
+      if (!expanded) $('#creations').scrollIntoView({ behavior: reduce ? 'instant' : 'smooth' });
+    });
+  }
+
   /* ---------- Decorative icons are hidden from screen readers ---------- */
   $$('svg.ico').forEach((s) => { s.setAttribute('aria-hidden', 'true'); s.setAttribute('focusable', 'false'); });
 
   /* ---------- Your details from config.js ---------- */
-  // Only the main offer section (#s42) button receives the external checkout URL.
-  // All other CTA buttons across the page smoothly scroll down to section #s42.
-  const offerBuyBtn = $('#s42 [data-buy]');
-  if (offerBuyBtn && C.checkoutUrl) {
-    offerBuyBtn.href = C.checkoutUrl;
-    offerBuyBtn.rel = 'noopener';
-  }
-
-  $$('a[href="#s42"]').forEach((a) => {
-    if (a !== offerBuyBtn) {
-      a.addEventListener('click', (e) => {
-        const target = $('#s42');
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
+  // Every sales CTA leads to the checkout at the bottom of the long offer card.
+  // Delegation also covers the primary Launchpad button inserted asynchronously.
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (!link) return;
+    const isSalesCTA = link.matches('a[href="#offer-checkout"], a[href="#s42"]') ||
+      link.matches('.vsl-offer__purchase .btn-forge:not(.btn-forge-continue), .repeat-buy .btn-forge:not(.btn-forge-continue)');
+    const target = $('#offer-checkout');
+    if (isSalesCTA && target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: reduce ? 'instant' : 'smooth', block: 'center' });
     }
   });
   $$('[data-price]').forEach((el) => { el.textContent = '$' + String(C.price).replace(/^\$/, ''); });
@@ -256,6 +280,39 @@
     });
   });
 
+  /* ---------- Primary checkout countdown: preserve its deadline across reloads ---------- */
+  const offerCountdown = $('[data-offer-countdown]');
+  if (offerCountdown) {
+    let offerEnd = C.launchEndsAt ? Date.parse(C.launchEndsAt) : NaN;
+    const duration = Number(C.offerCountdownMinutes);
+    if (!C.launchEndsAt && Number.isFinite(duration) && duration > 0) {
+      const storageKey = 'argonmax-offer-574-deadline';
+      try { offerEnd = Number(localStorage.getItem(storageKey)) || NaN; } catch (_) { /* Storage may be disabled. */ }
+      if (!Number.isFinite(offerEnd)) {
+        offerEnd = Date.now() + duration * 60000;
+        try { localStorage.setItem(storageKey, String(offerEnd)); } catch (_) { /* Use the current page deadline. */ }
+      }
+    }
+    if (Number.isFinite(offerEnd)) {
+      offerCountdown.hidden = false;
+      let offerInterval;
+      const updateOfferCountdown = () => {
+        const left = Math.max(0, Math.ceil((offerEnd - Date.now()) / 1000));
+        const values = { d: Math.floor(left / 86400), h: Math.floor(left % 86400 / 3600), m: Math.floor(left % 3600 / 60), s: left % 60 };
+        Object.entries(values).forEach(([key, value]) => {
+          $('[data-offer-cd="' + key + '"]', offerCountdown).textContent = key === 's' || key === 'm' ? String(value).padStart(2, '0') : String(value);
+        });
+        if (left === 0) {
+          $('.offer-countdown__banner', offerCountdown).hidden = true;
+          $('.offer-countdown__expired', offerCountdown).hidden = false;
+          clearInterval(offerInterval);
+        }
+        return left;
+      };
+      if (updateOfferCountdown() > 0) offerInterval = setInterval(updateOfferCountdown, 1000);
+    }
+  }
+
   /* ---------- Launch countdowns: show only for a configured future deadline ---------- */
   const countdowns = $$('[data-countdown]');
   const endAt = C.launchEndsAt ? Date.parse(C.launchEndsAt) : NaN;
@@ -276,6 +333,50 @@
     };
     tick();
     timer = setInterval(tick, 1000);
+  }
+
+  /* ---------- Exit offer: show once per tab session on a top-edge desktop exit ---------- */
+  const exitOffer = $('#exit-offer');
+  if (exitOffer && typeof exitOffer.showModal === 'function') {
+    let shown = false;
+    const sessionKey = 'argonmax-exit-new4-shown';
+    try { shown = sessionStorage.getItem(sessionKey) === '1'; } catch (_) { /* Use the page state. */ }
+    const showExitOffer = (event) => {
+      if (shown || event.relatedTarget || event.clientY > 0 || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      if (document.querySelector('dialog[open]')) return;
+      exitOffer.showModal();
+      shown = true;
+      document.documentElement.classList.add('exit-offer-open');
+      try { sessionStorage.setItem(sessionKey, '1'); } catch (_) { /* Use the page state. */ }
+    };
+    document.addEventListener('mouseout', showExitOffer);
+    $$('[data-exit-close]', exitOffer).forEach((button) => {
+      button.addEventListener('click', () => exitOffer.close());
+    });
+    exitOffer.addEventListener('close', () => {
+      document.documentElement.classList.remove('exit-offer-open');
+    });
+    exitOffer.addEventListener('click', (event) => {
+      if (event.target !== exitOffer) return;
+      const rect = exitOffer.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) exitOffer.close();
+    });
+    $('[data-copy-exit-coupon]', exitOffer).addEventListener('click', async (event) => {
+      const copyButton = event.currentTarget;
+      const status = $('[data-exit-status]', exitOffer);
+      try {
+        await navigator.clipboard.writeText('new4');
+        copyButton.textContent = 'Copied!';
+        status.textContent = 'Coupon copied. Paste it at checkout.';
+      } catch (_) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents($('#exit-coupon-code'));
+        selection.removeAllRanges();
+        selection.addRange(range);
+        status.textContent = 'Select and copy new4, then enter it at checkout.';
+      }
+    });
   }
 
   /* ---------- Sticky buy bar: shows once the first button is gone, hides at the offer + final CTA ---------- */
