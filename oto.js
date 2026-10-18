@@ -47,12 +47,18 @@
     el.textContent = '$' + dsPrice;
   });
 
+  $$('[data-oto-checkout-pending]').forEach((el) => {
+    el.hidden = Boolean(checkoutUrl);
+  });
+
   $$('[data-oto-buy]').forEach((a) => {
-    if (checkoutUrl) {
+    if (!a.classList.contains('oto-checkout__buy')) {
+      a.href = '#checkout-buy';
+    } else if (checkoutUrl) {
       a.href = checkoutUrl;
       a.rel = 'noopener';
     } else {
-      a.href = '#offer';
+      a.href = '#checkout-buy';
     }
   });
 
@@ -82,16 +88,16 @@
     s.setAttribute('focusable', 'false');
   });
 
-  // Smooth scroll to #offer when "Yes" decision is clicked
+  // Every page-level upgrade CTA lands at the price and checkout button.
   const scrollToOffer = (e) => {
-    const offer = $('#offer');
+    const offer = $('#checkout-buy');
     if (offer) {
       if (e) e.preventDefault();
-      offer.scrollIntoView({ behavior: 'smooth' });
+      offer.scrollIntoView({ behavior: reduce ? 'instant' : 'smooth', block: 'start' });
     }
   };
 
-  $$('[data-decision-yes], .js-scroll-offer').forEach((btn) => {
+  $$('[data-decision-yes], .js-scroll-offer, [data-oto-buy][href="#checkout-buy"]').forEach((btn) => {
     btn.addEventListener('click', scrollToOffer);
   });
 

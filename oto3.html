@@ -375,41 +375,27 @@
       </div>
 
       <!-- S23 · DEAL BOX -->
-      <div class="card reveal" style="max-width:820px;margin:clamp(32px,4vw,56px) auto 0;--d:140ms">
-        <header class="card__head">
-          <span class="card__pill">⭐ Special Customer Offer</span>
-          <h3 class="card__name" style="font-size:2rem">ArgonMax DFY Templates (Gold Vault)</h3>
-          <p class="card__pitch">Unlock the Gold vault inside your Templates library. Pick a template, add your details, and ArgonMax writes the whole piece for you. One payment.</p>
+      <div class="oto-checkout reveal" style="--d:140ms" aria-labelledby="checkout-title">
+        <img class="oto-checkout__image" src="assets/argonmax-device-showcase.png" width="1779" height="884" alt="ArgonMAX AI on desktop, laptop, tablet and phone" loading="lazy">
+        <header class="oto-checkout__head">
+          <span class="oto-checkout__pill">Your one-time customer upgrade</span>
+          <h3 id="checkout-title">Everything Inside<br>ArgonMax DFY Templates (Gold Vault)</h3>
         </header>
-
-        <div class="card__price">
-          <div class="card__num" style="display:flex;align-items:baseline;justify-content:center;gap:12px">
-            <span style="font-size:1.4rem;color:var(--muted);text-decoration:line-through">$297/yr</span>
-            <b data-oto-price style="font-size:3.8rem;color:var(--amber)">$67</b>
-          </div>
-          <p class="card__sub">One-time payment &middot; Added to your existing account &middot; Activated within minutes of purchase &middot; 30-day money-back guarantee</p>
-        </div>
-
-        <ul class="card__list" style="text-align:left;max-width:620px;margin-inline:auto">
+        <ul class="oto-checkout__list">
           <li><svg class="ico cyan"><use href="#i-check"/></svg><span>30 Gold templates</span></li><li><svg class="ico cyan"><use href="#i-check"/></svg><span>Funnels, sequences and scripts</span></li><li><svg class="ico cyan"><use href="#i-check"/></svg><span>Listings for Amazon, Etsy, Shopify and real estate</span></li><li><svg class="ico cyan"><use href="#i-check"/></svg><span>Ads for Facebook, Google and TikTok</span></li><li><svg class="ico cyan"><use href="#i-check"/></svg><span>Unlocked in your Templates library</span></li><li><svg class="ico cyan"><use href="#i-check"/></svg><span>Fresh output every time</span></li>
+          <li><svg class="ico"><use href="#i-check"/></svg><span>30-day money-back guarantee included</span></li>
         </ul>
-
-        <div style="margin-top:32px">
-          <a class="btn btn--buy btn--xl btn--pulse" data-oto-buy href="#offer">
-            <span>Yes &mdash; Upgrade Me To DFY Templates (Gold Vault) ($67)</span>
-            <svg class="ico"><use href="#i-arrow-right"/></svg>
-          </a>
+        <div class="oto-checkout__price" id="checkout-buy">
+          <p class="oto-checkout__value-label">Regular Value Of This Upgrade:</p>
+          <p class="oto-checkout__value">$297<span>/year</span></p>
+          <p class="oto-checkout__one-time">This Page Only, One-Time Upgrade:</p>
+          <p class="oto-checkout__today">Just <b data-oto-price>$67</b> Today</p>
         </div>
-
-        <div class="card__foot" style="margin-top:20px">
-          <span class="card__guar"><svg class="ico green"><use href="#i-shield-check"/></svg> Backed by our 30-Day 100% Money-Back Guarantee</span>
-        </div>
-
-        <div style="margin-top:22px">
-          <a class="oto-decline" data-oto-skip href="oto4.html">
-            No thanks, I'll pass on this upgrade
-          </a>
-        </div>
+        <a class="oto-checkout__buy" data-oto-buy href="#offer">Yes &mdash; Add DFY Templates (Gold Vault) Now!</a>
+        <p class="oto-checkout__trust"><svg class="ico"><use href="#i-shield-check"/></svg>30-day money-back guarantee</p>
+        <p class="oto-checkout__terms">One payment. No monthly fees. Added to your existing account.</p>
+        <p class="oto-checkout__pending" data-oto-checkout-pending>Checkout link coming soon.</p>
+        <a class="oto-decline oto-checkout__decline" data-oto-skip href="oto4.html">No thanks, I'll pass on this upgrade</a>
       </div>
     </div>
   </section>

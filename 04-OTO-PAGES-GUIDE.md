@@ -8,6 +8,15 @@
 > - `[BRACKETS]` = tumhe real value daalni hai (jaise `[ACTIVATION_TIME]`). Bina replace kiye page live mat karo.
 > - Ye file seedha kisi AI ko bhi de sakte ho (sabse last me ready prompt hai).
 
+## Current checkout implementation
+
+- `oto1.html`–`oto10.html` use the shared `.oto-checkout` card in `oto.css`: white surface, yellow frame, feature checklist, orange upgrade button, and the supplied `assets/argonmax-device-showcase.png`.
+- Offer-specific features and prices remain separate for every OTO; `oto.js` reads live prices from `config.js`.
+- Page-level Buy/Upgrade CTAs and the Yes decision scroll to `#checkout-buy`, placing the price and orange checkout button together in view. The checkout card fades in without a vertical reveal transform so the scroll target stays stable.
+- Add each payment URL to `ARGONMAX.oto[1]`–`ARGONMAX.oto[10].checkoutUrl` in `config.js`. Only the orange checkout button opens that URL; other purchase CTAs still scroll to the checkout area. Empty URLs keep the orange button at `#checkout-buy` and show “Checkout link coming soon.” Setting a URL hides that notice.
+- The existing downsell modal and next-offer routing remain unchanged. The card does not claim payment-provider support or encryption details before a checkout provider is configured.
+
+
 ---
 
 # PART 0 — Pehle ye padho (5 min)
