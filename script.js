@@ -16,6 +16,16 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const hasIO = 'IntersectionObserver' in window;
 
+  const marqueePause = $('[data-marquee-pause]');
+  if (marqueePause) {
+    marqueePause.addEventListener('click', () => {
+      const paused = marqueePause.closest('.hero-feature-marquee').classList.toggle('is-paused');
+      marqueePause.setAttribute('aria-pressed', String(paused));
+      marqueePause.setAttribute('aria-label', paused ? 'Resume feature scrolling' : 'Pause feature scrolling');
+      marqueePause.textContent = paused ? 'Resume' : 'Pause';
+    });
+  }
+
   /* ---------- Final checkout: use the supplied purchase URL and remove declines ---------- */
   const finalCheckout = $('#offer-checkout .forgeContainer');
   if (finalCheckout) {
