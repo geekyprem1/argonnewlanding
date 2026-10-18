@@ -1086,6 +1086,8 @@ pre .k{color:#7fa6ff}pre .f{color:#5fe0ff}pre .s{color:#ffd070}pre .c{color:#6e8
 .hero .subhead .no{color:#075569;background:rgba(255,255,255,.82);border-color:#67adbc}
 .hero .subhead .no .ico{color:#08707a}
 .hero .deck__text strong{color:#075bd5}
+.hero .deck__text{min-width:0;padding:clamp(22px,2.6vw,34px);border:1px solid #bfd7e9;border-left:4px solid #12839a;border-radius:20px;background:#f8fcff;box-shadow:0 16px 42px -22px rgba(19,56,91,.35)}
+.hero .deck__text p{color:#203e5c}
 .hero .deck__trio span{color:#174b91;background:#e8f0ff;border-color:#a9c5f1}
 .hero .deck__trio span:last-child{color:#9b4700;background:#fff0d7;border-color:#e5b86d}
 .hero .roster{color:var(--text)}
