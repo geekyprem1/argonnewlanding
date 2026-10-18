@@ -303,7 +303,8 @@
   width: 100%;
   margin-top: clamp(32px, 4vw, 54px);
   border-radius: var(--r-xl);
-  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--line-2);
   background: #081020;
   box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7);
@@ -1360,4 +1361,35 @@ body[data-oto] main > section:nth-of-type(1) {
   .oto-ba-row {
     grid-template-columns: 1fr;
   }
+}
+
+/* The shared hero uses a pale background, so upgrade copy needs dark ink. */
+body[data-oto] .hero .subhead .lead { color: #304966; }
+body[data-oto] .hero .h1 .cyan { color: #086b80; }
+body[data-oto] .hero .oto-badge {
+  color: #795000;
+  background: #fff3ca;
+  border-color: #dfbf61;
+}
+
+@media (max-width: 600px) {
+  .comp-matrix::before {
+    content: "Swipe left / right to compare";
+    position: sticky;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    background: #10203a;
+    color: #c4d2e7;
+    font: 500 .72rem/1.4 var(--f-body);
+  }
+  .comp-table { min-width: 440px; }
+  .ds-modal__box { max-height: calc(100dvh - 32px); }
+  .ds-modal__close { width: 44px; height: 44px; }
+  .oto-sticky { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+}
+@media (max-width: 480px) {
+  .oto-bar { flex-direction: column; gap: 8px; }
+  .oto-bar > span:last-child { max-width: 34ch; }
 }

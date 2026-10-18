@@ -15,6 +15,13 @@
   const hasIO = 'IntersectionObserver' in window;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // Keep the horizontally scrollable comparison reachable by keyboard as well.
+  $$('.comp-matrix').forEach((region) => {
+    region.tabIndex = 0;
+    region.setAttribute('role', 'region');
+    region.setAttribute('aria-label', 'Feature comparison. Scroll horizontally on small screens.');
+  });
+
   // Determine current OTO step (1 through 10)
   const otoNum = Number(document.body.dataset.oto || '1');
   const otoData = (cfg.oto && cfg.oto[otoNum]) ? cfg.oto[otoNum] : null;
