@@ -1449,3 +1449,16 @@ html.exit-offer-open{overflow:hidden}
 .website-demo__caption>a{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;color:#a9def9;font-size:.78rem;font-weight:650;text-underline-offset:4px}
 @media(max-width:950px){.arcade__grid{gap:14px}.arcade-card{padding:14px}.arcade-card__top{font-size:.53rem}}
 @media(max-width:760px){.arcade__grid{grid-template-columns:1fr;max-width:430px;margin:auto;gap:24px}.arcade-card{padding:22px}.arcade-card__top{font-size:.65rem}.arcade-card__tag{min-height:0}.website-showcase__grid{grid-template-columns:1fr}.website-demo iframe{height:540px}}
+
+/* Section 8: supplied subscription-overload artwork. */
+.sec.problem-image{padding:0;background:linear-gradient(135deg,#f8f2e9 0%,#f3e6d8 55%,#e9ddcc 100%)}
+.sec.problem-image::before,.sec.problem-image::after{display:none}
+.problem-image img{display:block;width:100%;height:auto}
+
+/* Project ideas banner immediately below the cost of inaction. */
+.creative-suite-banner{padding:0;background:linear-gradient(135deg,#e7f5ff 0%,#f1fbff 50%,#deeffb 100%)}
+.creative-suite-banner img{display:block;width:100%;height:auto}
+
+/* Freelancer artwork before the Gemini engine section. */
+.freelancer-pricing-banner{padding:0;background:radial-gradient(ellipse at 0% 35%,#06304a 0%,transparent 55%),radial-gradient(ellipse at 100% 75%,#102c17 0%,transparent 50%),#020910}
+.freelancer-pricing-banner img{display:block;width:100%;height:auto}
