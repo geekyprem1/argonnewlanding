@@ -32,7 +32,7 @@
     const updateFinalCheckout = () => {
       const buy = $('.btn-forge:not(.btn-forge-continue)', finalCheckout);
       if (buy) {
-        buy.href = 'https://launchpadjv.com/product/checkout/5707?page=4807&offer=574&offerProduct=6618';
+        buy.href = 'https://launchpadjv.com/product/checkout/5707?page=4807&offer=574&offerProduct=6862';
         buy.rel = 'noopener';
       }
       $$('.btn-forge-continue', finalCheckout).forEach((link) => link.remove());
